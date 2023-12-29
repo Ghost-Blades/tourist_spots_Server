@@ -41,7 +41,6 @@ server.get('/', (req, res) => {
     res.sendFile(__dirname + '/Index.html');
 });
 
-//import { v1 as uuidv1, v4 as uuidv4 } from 'uuid';
 
 server.listen(PORT, () => {
     console.log(
@@ -50,6 +49,8 @@ server.listen(PORT, () => {
         "\nPID:" + process.pid +
         "\nOS:" + os.platform
     );
+
+    //Команды для Linux
     LinuxComand('free -h');
     LinuxComand('pwd');
 })
